@@ -1,0 +1,59 @@
+﻿div > p::before { 
+  content: "=============";
+  color: blue;
+}
+
+div > p::after { 
+  content: "=============";
+  color: red;
+}
+p, span{
+    letter-spacing: 2px;
+	font-size: 18px;
+    font-weight: bold;
+
+}
+body {
+    background-color: lightgreen;
+  }
+@media screen and (min-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
+.third {
+box-shadow: 5px 9px 11px 0px #00000066;
+}
+.third.margin-bottom {
+    box-shadow: 5px 9px 11px 0px #00000066;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+	color: #ECECEC;
+	font-size: 20px;
+}
+.line {
+	font-size: 30px;
+	font-weight: 700;
+    display: block;
+    border: none;
+    color: black;
+    background: transparent;
+    border-bottom: 3px solid white;
+    padding: 5px 2px 0 2px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+ 
+.line:focus {
+    outline: none;
+    border-color: green;
+}
+button.button.teal.padding-large.hover-black {
+    background-color: #25c913;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<title>BAH</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 align="center">Payment form</h1>
+	</header>
+	<div class="content">
+		<form >
+			<p>KZT: &nbsp&nbsp<input id="number"type="number" name="tg"step="10"min="100" max="10000" placeholder="110"></p>
+  			<h2> <span class="hide"> Type the phone number and how many "edenic" you want to put there </span> </h2>
+  			<label for="phone">Phone Number ( +7 7xx-xxx-xxxx):</label><br/>
+ 			 <input class="line" type="text" id="phone" placeholder="+77074788044" pattern="^\+7\|8d{3}\d{7}$"oninput="operators();" title="No more than 12 numbers" onkeyup="func1()">
+ 			 <p id="demo"></p>
+ 			 
+  			<input class="button button1" type="submit" value="Submit" onclick="func2()" >
+
+		</form>
+		<div class="check" id="check">
+          <img id="operators" src="images/operators.jpg">      
+       </div>
+		<div class="block hide" id="1" > 
+			<fieldset>
+    			 <legend>Payment info</legend>
+    			<br>
+					<p>You are going to put on the number:<p>
+						<p > <b id="text"></b><p>
+			
+						<p > <b id="balanse"> </b> &nbsp balance<p>
+			<div class="col-50">
+            <h3>Payment</h3>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" placeholder="352">
+              </div>
+              <input type="Submit" class="button button" value="Submit" >
+
+
+			</fieldset>
+        </div>
+		</div>
+		
+		<span id="Payment_place" >
+			
+		</span>
+	</div>
+	<footer>
+		
+	</footer>
+</body>
+</html>

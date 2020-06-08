@@ -1,0 +1,16 @@
+#prog_stat { 
+    width: 40%; 
+    background-color: rgb(156, 156, 156); 
+}   
+#progbar { 
+    width: 1%; 
+    height: 30px; 
+    background-color: green; 
+} 
+input {
+    width: 50px;
+}
+button {
+    background-color: black;
+    color: white;
+}
